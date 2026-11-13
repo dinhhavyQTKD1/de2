@@ -1,0 +1,4 @@
+# Project: Nam Việt Software AI Agent (AI301 - Đề 02)
+# Zero external packages required!
+# Built 100% on Python 3.10+ Standard Library (http.server, json, urllib, socket, argparse)
+

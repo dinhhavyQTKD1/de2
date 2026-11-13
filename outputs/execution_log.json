@@ -1,0 +1,1268 @@
+{
+  "run_id": "RUN-20261113-084334",
+  "generated_at": "2026-11-13T08:43:34.246672",
+  "total_steps": 80,
+  "events": [
+    {
+      "timestamp": "2026-11-13T08:43:34.077843",
+      "run_id": "RUN-20261113-084334",
+      "step": "INITIALIZATION",
+      "action": "LOAD_DATA_AND_RULES",
+      "rule_id": "SYSTEM_INIT",
+      "status": "SUCCESS",
+      "details": {
+        "raw_leads_count": 20,
+        "history_records_count": 4,
+        "sales_reps_count": 8,
+        "products_count": 4
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.080882",
+      "run_id": "RUN-20261113-084334",
+      "step": "DEDUPLICATION",
+      "action": "CREATE_NEW_CUSTOMER_CLUSTER",
+      "rule_id": "RULE_DEDUP_NEW_ENTITY",
+      "status": "SUCCESS",
+      "details": {
+        "lead_id": "LEAD-001",
+        "company": "Công ty Cổ phần Công nghệ Nam Long",
+        "phone": "0903456789"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.081433",
+      "run_id": "RUN-20261113-084334",
+      "step": "DEDUPLICATION",
+      "action": "MERGE_LEAD_INTO_EXISTING_CLUSTER",
+      "rule_id": "RULE_DEDUP_MULTI_ATTR",
+      "status": "SUCCESS",
+      "details": {
+        "lead_id": "LEAD-002",
+        "company": "Nam Long Tech JSC",
+        "phone": "0903.456.789",
+        "matched_cluster_lead_id": "LEAD-001"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.082521",
+      "run_id": "RUN-20261113-084334",
+      "step": "DEDUPLICATION",
+      "action": "MERGE_LEAD_INTO_EXISTING_CLUSTER",
+      "rule_id": "RULE_DEDUP_MULTI_ATTR",
+      "status": "SUCCESS",
+      "details": {
+        "lead_id": "LEAD-003",
+        "company": "NL Corp",
+        "phone": "0903456789",
+        "matched_cluster_lead_id": "LEAD-001"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.083579",
+      "run_id": "RUN-20261113-084334",
+      "step": "DEDUPLICATION",
+      "action": "CREATE_NEW_CUSTOMER_CLUSTER",
+      "rule_id": "RULE_DEDUP_NEW_ENTITY",
+      "status": "SUCCESS",
+      "details": {
+        "lead_id": "LEAD-004",
+        "company": "Tập đoàn Đầu tư Alpha",
+        "phone": "0945678901"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.085745",
+      "run_id": "RUN-20261113-084334",
+      "step": "DEDUPLICATION",
+      "action": "CREATE_NEW_CUSTOMER_CLUSTER",
+      "rule_id": "RULE_DEDUP_NEW_ENTITY",
+      "status": "SUCCESS",
+      "details": {
+        "lead_id": "LEAD-005",
+        "company": "Xưởng May Thêu An Thịnh",
+        "phone": "0918112233"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.088464",
+      "run_id": "RUN-20261113-084334",
+      "step": "DEDUPLICATION",
+      "action": "CREATE_NEW_CUSTOMER_CLUSTER",
+      "rule_id": "RULE_DEDUP_NEW_ENTITY",
+      "status": "SUCCESS",
+      "details": {
+        "lead_id": "LEAD-006",
+        "company": "Công ty TNHH Vận Tải Việt Phát",
+        "phone": "0903112233"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.089553",
+      "run_id": "RUN-20261113-084334",
+      "step": "DEDUPLICATION",
+      "action": "CREATE_NEW_CUSTOMER_CLUSTER",
+      "rule_id": "RULE_DEDUP_NEW_ENTITY",
+      "status": "SUCCESS",
+      "details": {
+        "lead_id": "LEAD-007",
+        "company": "Công ty Cổ phần Bán lẻ Sài Gòn",
+        "phone": "0988223344"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.091558",
+      "run_id": "RUN-20261113-084334",
+      "step": "DEDUPLICATION",
+      "action": "CREATE_NEW_CUSTOMER_CLUSTER",
+      "rule_id": "RULE_DEDUP_NEW_ENTITY",
+      "status": "SUCCESS",
+      "details": {
+        "lead_id": "LEAD-008",
+        "company": "Tập đoàn Đại Dương Xanh",
+        "phone": "0909999888"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.094060",
+      "run_id": "RUN-20261113-084334",
+      "step": "DEDUPLICATION",
+      "action": "CREATE_NEW_CUSTOMER_CLUSTER",
+      "rule_id": "RULE_DEDUP_NEW_ENTITY",
+      "status": "SUCCESS",
+      "details": {
+        "lead_id": "LEAD-009",
+        "company": "Công ty TNHH Cơ Khí & Chế Tạo Tân Phát",
+        "phone": "+84 912 334 455"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.097571",
+      "run_id": "RUN-20261113-084334",
+      "step": "DEDUPLICATION",
+      "action": "CREATE_NEW_CUSTOMER_CLUSTER",
+      "rule_id": "RULE_DEDUP_NEW_ENTITY",
+      "status": "SUCCESS",
+      "details": {
+        "lead_id": "LEAD-010",
+        "company": "Chuỗi Cửa Hàng Thời Trang Bimi",
+        "phone": "0938 123 456"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.100570",
+      "run_id": "RUN-20261113-084334",
+      "step": "DEDUPLICATION",
+      "action": "CREATE_NEW_CUSTOMER_CLUSTER",
+      "rule_id": "RULE_DEDUP_NEW_ENTITY",
+      "status": "SUCCESS",
+      "details": {
+        "lead_id": "LEAD-011",
+        "company": "Khách Sạn & Nhà Hàng Sen Vàng",
+        "phone": "0977889900"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.105283",
+      "run_id": "RUN-20261113-084334",
+      "step": "DEDUPLICATION",
+      "action": "CREATE_NEW_CUSTOMER_CLUSTER",
+      "rule_id": "RULE_DEDUP_NEW_ENTITY",
+      "status": "SUCCESS",
+      "details": {
+        "lead_id": "LEAD-012",
+        "company": "Công ty Cổ phần Vận tải Biển Miền Trung (CentralShip)",
+        "phone": "0913556677"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.108834",
+      "run_id": "RUN-20261113-084334",
+      "step": "DEDUPLICATION",
+      "action": "CREATE_NEW_CUSTOMER_CLUSTER",
+      "rule_id": "RULE_DEDUP_NEW_ENTITY",
+      "status": "SUCCESS",
+      "details": {
+        "lead_id": "LEAD-013",
+        "company": "Công ty TNHH Nhựa & Bao Bì Toàn Thắng",
+        "phone": "0908 667 788"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.113361",
+      "run_id": "RUN-20261113-084334",
+      "step": "DEDUPLICATION",
+      "action": "CREATE_NEW_CUSTOMER_CLUSTER",
+      "rule_id": "RULE_DEDUP_NEW_ENTITY",
+      "status": "SUCCESS",
+      "details": {
+        "lead_id": "LEAD-014",
+        "company": "Chuỗi Mỹ Phẩm Organic Sài Gòn",
+        "phone": "0902 998 877"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.118475",
+      "run_id": "RUN-20261113-084334",
+      "step": "DEDUPLICATION",
+      "action": "CREATE_NEW_CUSTOMER_CLUSTER",
+      "rule_id": "RULE_DEDUP_NEW_ENTITY",
+      "status": "SUCCESS",
+      "details": {
+        "lead_id": "LEAD-015",
+        "company": "Hệ Thống Phòng Khám Nha Khoa Tâm Đức",
+        "phone": "0915 223 344"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.127026",
+      "run_id": "RUN-20261113-084334",
+      "step": "DEDUPLICATION",
+      "action": "CREATE_NEW_CUSTOMER_CLUSTER",
+      "rule_id": "RULE_DEDUP_NEW_ENTITY",
+      "status": "SUCCESS",
+      "details": {
+        "lead_id": "LEAD-016",
+        "company": "Chuỗi Trà Sữa Đô Thị (Urban Tea)",
+        "phone": "0972 334 455"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.132017",
+      "run_id": "RUN-20261113-084334",
+      "step": "DEDUPLICATION",
+      "action": "CREATE_NEW_CUSTOMER_CLUSTER",
+      "rule_id": "RULE_DEDUP_NEW_ENTITY",
+      "status": "SUCCESS",
+      "details": {
+        "lead_id": "LEAD-017",
+        "company": "Hợp tác xã Nông sản Hữu cơ Mộc Châu",
+        "phone": "0984 665 544"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.140555",
+      "run_id": "RUN-20261113-084334",
+      "step": "DEDUPLICATION",
+      "action": "CREATE_NEW_CUSTOMER_CLUSTER",
+      "rule_id": "RULE_DEDUP_NEW_ENTITY",
+      "status": "SUCCESS",
+      "details": {
+        "lead_id": "LEAD-018",
+        "company": "Công ty TNHH Thương mại Minh Khang",
+        "phone": "0934556677"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.148076",
+      "run_id": "RUN-20261113-084334",
+      "step": "DEDUPLICATION",
+      "action": "CREATE_NEW_CUSTOMER_CLUSTER",
+      "rule_id": "RULE_DEDUP_NEW_ENTITY",
+      "status": "SUCCESS",
+      "details": {
+        "lead_id": "LEAD-019",
+        "company": "Cửa hàng Phụ tùng Ô tô Hùng Dũng",
+        "phone": "0912999111"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.152704",
+      "run_id": "RUN-20261113-084334",
+      "step": "DEDUPLICATION",
+      "action": "CREATE_NEW_CUSTOMER_CLUSTER",
+      "rule_id": "RULE_DEDUP_NEW_ENTITY",
+      "status": "SUCCESS",
+      "details": {
+        "lead_id": "LEAD-020",
+        "company": "Tập đoàn Minh Anh",
+        "phone": "0918776655"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.153702",
+      "run_id": "RUN-20261113-084334",
+      "step": "NEEDS_AND_GAP_ANALYSIS",
+      "action": "ANALYZE_NEEDS",
+      "rule_id": "RULE_PRODUCT_KEYWORD_MATCH",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0001",
+        "matched_count": 2,
+        "matched_product_names": [
+          "NamViet CRM Pro",
+          "NamViet HRM Cloud"
+        ],
+        "is_out_of_scope": false,
+        "missing_fields": []
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.154736",
+      "run_id": "RUN-20261113-084334",
+      "step": "SCORING_AND_PRIORITIZATION",
+      "action": "SCORE_CUSTOMER",
+      "rule_id": "RULE_MULTI_DIMENSIONAL_SCORING",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0001",
+        "company_name": "Công ty Cổ phần Công nghệ Nam Long",
+        "total_score": 100,
+        "priority": "P1",
+        "breakdown": {
+          "product_fit": 40,
+          "budget_alignment": 30,
+          "authority_and_timeline": 20,
+          "data_completeness": 10
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.155579",
+      "run_id": "RUN-20261113-084334",
+      "step": "SALES_ROUTING",
+      "action": "ASSIGN_SALES_REP",
+      "rule_id": "RULE_ROUTING_INDUSTRY_REGION",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0001",
+        "assigned_rep": "Trần Thị Bình",
+        "reason": "Khớp ngành phụ trách (Bán lẻ, Thương mại điện tử, Thời trang) và khu vực (Miền Bắc). Tải hiện tại: 1/50"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.156883",
+      "run_id": "RUN-20261113-084334",
+      "step": "NEEDS_AND_GAP_ANALYSIS",
+      "action": "ANALYZE_NEEDS",
+      "rule_id": "RULE_PRODUCT_KEYWORD_MATCH",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0002",
+        "matched_count": 0,
+        "matched_product_names": [],
+        "is_out_of_scope": true,
+        "missing_fields": []
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.157762",
+      "run_id": "RUN-20261113-084334",
+      "step": "SCORING_AND_PRIORITIZATION",
+      "action": "SCORE_CUSTOMER",
+      "rule_id": "RULE_MULTI_DIMENSIONAL_SCORING",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0002",
+        "company_name": "Tập đoàn Đầu tư Alpha",
+        "total_score": 30,
+        "priority": "OUT_OF_SCOPE",
+        "breakdown": {
+          "product_fit": 0,
+          "budget_alignment": 0,
+          "authority_and_timeline": 20,
+          "data_completeness": 10
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.159314",
+      "run_id": "RUN-20261113-084334",
+      "step": "ESCALATION_CHECK",
+      "action": "TRIGGER_MANAGER_ESCALATION",
+      "rule_id": "HIGH_BUDGET_UNCLEAR_REQUIREMENTS",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0002",
+        "reasons": [
+          "Ngân sách lớn (2,500,000,000 VNĐ) nhưng yêu cầu phạm vi chưa rõ ràng hoặc thiếu thông số kỹ thuật then chốt.",
+          "Yêu cầu nằm ngoài giải pháp đóng gói chuẩn của Nam Việt nhưng ngân sách rất cao (2,500,000,000 VNĐ), cần xem xét chuyển giao đối tác hệ sinh thái."
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.160651",
+      "run_id": "RUN-20261113-084334",
+      "step": "SALES_ROUTING",
+      "action": "ASSIGN_SALES_REP",
+      "rule_id": "RULE_ROUTING_INDUSTRY_REGION",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0002",
+        "assigned_rep": "Vũ Quốc Hùng",
+        "reason": "Khớp ngành phụ trách (Dịch vụ, Giáo dục, Y tế, Công nghệ) và khu vực (Miền Nam). Tải hiện tại: 1/50"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.162249",
+      "run_id": "RUN-20261113-084334",
+      "step": "NEEDS_AND_GAP_ANALYSIS",
+      "action": "ANALYZE_NEEDS",
+      "rule_id": "RULE_PRODUCT_KEYWORD_MATCH",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0003",
+        "matched_count": 1,
+        "matched_product_names": [
+          "NamViet ERP SMB"
+        ],
+        "is_out_of_scope": false,
+        "missing_fields": [
+          "Ngân sách dự kiến",
+          "Email liên hệ chính thức"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.162796",
+      "run_id": "RUN-20261113-084334",
+      "step": "SCORING_AND_PRIORITIZATION",
+      "action": "SCORE_CUSTOMER",
+      "rule_id": "RULE_MULTI_DIMENSIONAL_SCORING",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0003",
+        "company_name": "Xưởng May Thêu An Thịnh",
+        "total_score": 82,
+        "priority": "P1",
+        "breakdown": {
+          "product_fit": 40,
+          "budget_alignment": 15,
+          "authority_and_timeline": 20,
+          "data_completeness": 7
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.165551",
+      "run_id": "RUN-20261113-084334",
+      "step": "SALES_ROUTING",
+      "action": "ASSIGN_SALES_REP",
+      "rule_id": "RULE_ROUTING_INDUSTRY_REGION",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0003",
+        "assigned_rep": "Nguyễn Văn An",
+        "reason": "Khớp ngành phụ trách (Sản xuất, Xây dựng, Cơ khí) và khu vực (Miền Bắc). Tải hiện tại: 1/50"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.166832",
+      "run_id": "RUN-20261113-084334",
+      "step": "NEEDS_AND_GAP_ANALYSIS",
+      "action": "ANALYZE_NEEDS",
+      "rule_id": "RULE_PRODUCT_KEYWORD_MATCH",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0004",
+        "matched_count": 1,
+        "matched_product_names": [
+          "NamViet ERP SMB"
+        ],
+        "is_out_of_scope": false,
+        "missing_fields": []
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.167841",
+      "run_id": "RUN-20261113-084334",
+      "step": "SCORING_AND_PRIORITIZATION",
+      "action": "SCORE_CUSTOMER",
+      "rule_id": "RULE_MULTI_DIMENSIONAL_SCORING",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0004",
+        "company_name": "Công ty TNHH Vận Tải Việt Phát",
+        "total_score": 100,
+        "priority": "P1",
+        "breakdown": {
+          "product_fit": 40,
+          "budget_alignment": 30,
+          "authority_and_timeline": 20,
+          "data_completeness": 10
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.168900",
+      "run_id": "RUN-20261113-084334",
+      "step": "HISTORY_CROSS_CHECK",
+      "action": "HISTORY_MATCH_FOUND",
+      "rule_id": "RULE_HISTORY_DO_NOT_CONTACT",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0004",
+        "company_name": "Công ty TNHH Vận Tải Việt Phát",
+        "matched_status": "DO_NOT_CONTACT",
+        "notes": "Khách hàng phàn nàn bị nhiều nhân viên gọi làm phiền, yêu cầu xóa vĩnh viễn khỏi danh sách tiếp thị."
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.168900",
+      "run_id": "RUN-20261113-084334",
+      "step": "NEEDS_AND_GAP_ANALYSIS",
+      "action": "ANALYZE_NEEDS",
+      "rule_id": "RULE_PRODUCT_KEYWORD_MATCH",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0005",
+        "matched_count": 2,
+        "matched_product_names": [
+          "NamViet CRM Pro",
+          "NamViet Accounting Simple"
+        ],
+        "is_out_of_scope": false,
+        "missing_fields": []
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.170351",
+      "run_id": "RUN-20261113-084334",
+      "step": "SCORING_AND_PRIORITIZATION",
+      "action": "SCORE_CUSTOMER",
+      "rule_id": "RULE_MULTI_DIMENSIONAL_SCORING",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0005",
+        "company_name": "Công ty Cổ phần Bán lẻ Sài Gòn",
+        "total_score": 100,
+        "priority": "P1",
+        "breakdown": {
+          "product_fit": 40,
+          "budget_alignment": 30,
+          "authority_and_timeline": 20,
+          "data_completeness": 10
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.171658",
+      "run_id": "RUN-20261113-084334",
+      "step": "HISTORY_CROSS_CHECK",
+      "action": "HISTORY_MATCH_FOUND",
+      "rule_id": "RULE_HISTORY_ACTIVE_CLIENT",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0005",
+        "company_name": "Công ty Cổ phần Bán lẻ Sài Gòn",
+        "matched_status": "ACTIVE_CLIENT",
+        "notes": "Đã ký hợp đồng gói NamViet ERP SMB & CRM Pro thời hạn 3 năm. Đang vận hành ổn định, chuyển cho Account Manager."
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.172670",
+      "run_id": "RUN-20261113-084334",
+      "step": "NEEDS_AND_GAP_ANALYSIS",
+      "action": "ANALYZE_NEEDS",
+      "rule_id": "RULE_PRODUCT_KEYWORD_MATCH",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0006",
+        "matched_count": 1,
+        "matched_product_names": [
+          "NamViet ERP SMB"
+        ],
+        "is_out_of_scope": false,
+        "missing_fields": []
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.173670",
+      "run_id": "RUN-20261113-084334",
+      "step": "SCORING_AND_PRIORITIZATION",
+      "action": "SCORE_CUSTOMER",
+      "rule_id": "RULE_MULTI_DIMENSIONAL_SCORING",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0006",
+        "company_name": "Tập đoàn Đại Dương Xanh",
+        "total_score": 95,
+        "priority": "P1",
+        "breakdown": {
+          "product_fit": 40,
+          "budget_alignment": 30,
+          "authority_and_timeline": 15,
+          "data_completeness": 10
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.180481",
+      "run_id": "RUN-20261113-084334",
+      "step": "ESCALATION_CHECK",
+      "action": "TRIGGER_MANAGER_ESCALATION",
+      "rule_id": "MULTI_REGION_ENTERPRISE",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0006",
+        "reasons": [
+          "Doanh nghiệp quy mô lớn hoạt động đa chi nhánh (Đa chi nhánh (Hà Nội, Đà Nẵng, TP.HCM)), cần Trưởng phòng chỉ định tổ công tác liên vùng."
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.180481",
+      "run_id": "RUN-20261113-084334",
+      "step": "SALES_ROUTING",
+      "action": "ASSIGN_SALES_REP",
+      "rule_id": "RULE_ROUTING_INDUSTRY_REGION",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0006",
+        "assigned_rep": "Lê Hoàng Cường",
+        "reason": "Khớp ngành phụ trách (F&B, Khách sạn, Dịch vụ) và khu vực (Miền Bắc). Tải hiện tại: 1/50"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.181931",
+      "run_id": "RUN-20261113-084334",
+      "step": "NEEDS_AND_GAP_ANALYSIS",
+      "action": "ANALYZE_NEEDS",
+      "rule_id": "RULE_PRODUCT_KEYWORD_MATCH",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0007",
+        "matched_count": 1,
+        "matched_product_names": [
+          "NamViet ERP SMB"
+        ],
+        "is_out_of_scope": false,
+        "missing_fields": []
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.183439",
+      "run_id": "RUN-20261113-084334",
+      "step": "SCORING_AND_PRIORITIZATION",
+      "action": "SCORE_CUSTOMER",
+      "rule_id": "RULE_MULTI_DIMENSIONAL_SCORING",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0007",
+        "company_name": "Công ty TNHH Cơ Khí & Chế Tạo Tân Phát",
+        "total_score": 100,
+        "priority": "P1",
+        "breakdown": {
+          "product_fit": 40,
+          "budget_alignment": 30,
+          "authority_and_timeline": 20,
+          "data_completeness": 10
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.183970",
+      "run_id": "RUN-20261113-084334",
+      "step": "SALES_ROUTING",
+      "action": "ASSIGN_SALES_REP",
+      "rule_id": "RULE_ROUTING_INDUSTRY_REGION",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0007",
+        "assigned_rep": "Nguyễn Văn An",
+        "reason": "Khớp ngành phụ trách (Sản xuất, Xây dựng, Cơ khí) và khu vực (Miền Bắc). Tải hiện tại: 2/50"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.185159",
+      "run_id": "RUN-20261113-084334",
+      "step": "NEEDS_AND_GAP_ANALYSIS",
+      "action": "ANALYZE_NEEDS",
+      "rule_id": "RULE_PRODUCT_KEYWORD_MATCH",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0008",
+        "matched_count": 1,
+        "matched_product_names": [
+          "NamViet CRM Pro"
+        ],
+        "is_out_of_scope": false,
+        "missing_fields": []
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.185159",
+      "run_id": "RUN-20261113-084334",
+      "step": "SCORING_AND_PRIORITIZATION",
+      "action": "SCORE_CUSTOMER",
+      "rule_id": "RULE_MULTI_DIMENSIONAL_SCORING",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0008",
+        "company_name": "Chuỗi Cửa Hàng Thời Trang Bimi",
+        "total_score": 100,
+        "priority": "P1",
+        "breakdown": {
+          "product_fit": 40,
+          "budget_alignment": 30,
+          "authority_and_timeline": 20,
+          "data_completeness": 10
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.186524",
+      "run_id": "RUN-20261113-084334",
+      "step": "SALES_ROUTING",
+      "action": "ASSIGN_SALES_REP",
+      "rule_id": "RULE_ROUTING_INDUSTRY_REGION",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0008",
+        "assigned_rep": "Trần Thị Bình",
+        "reason": "Khớp ngành phụ trách (Bán lẻ, Thương mại điện tử, Thời trang) và khu vực (Miền Bắc). Tải hiện tại: 2/50"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.188793",
+      "run_id": "RUN-20261113-084334",
+      "step": "NEEDS_AND_GAP_ANALYSIS",
+      "action": "ANALYZE_NEEDS",
+      "rule_id": "RULE_PRODUCT_KEYWORD_MATCH",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0009",
+        "matched_count": 1,
+        "matched_product_names": [
+          "NamViet HRM Cloud"
+        ],
+        "is_out_of_scope": false,
+        "missing_fields": []
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.190096",
+      "run_id": "RUN-20261113-084334",
+      "step": "SCORING_AND_PRIORITIZATION",
+      "action": "SCORE_CUSTOMER",
+      "rule_id": "RULE_MULTI_DIMENSIONAL_SCORING",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0009",
+        "company_name": "Khách Sạn & Nhà Hàng Sen Vàng",
+        "total_score": 100,
+        "priority": "P1",
+        "breakdown": {
+          "product_fit": 40,
+          "budget_alignment": 30,
+          "authority_and_timeline": 20,
+          "data_completeness": 10
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.191094",
+      "run_id": "RUN-20261113-084334",
+      "step": "SALES_ROUTING",
+      "action": "ASSIGN_SALES_REP",
+      "rule_id": "RULE_ROUTING_INDUSTRY_REGION",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0009",
+        "assigned_rep": "Đặng Thùy Linh",
+        "reason": "Khớp ngành phụ trách (F&B, Nông sản, Dịch vụ tổng hợp) và khu vực (Miền Bắc). Tải hiện tại: 1/50"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.192091",
+      "run_id": "RUN-20261113-084334",
+      "step": "NEEDS_AND_GAP_ANALYSIS",
+      "action": "ANALYZE_NEEDS",
+      "rule_id": "RULE_PRODUCT_KEYWORD_MATCH",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0010",
+        "matched_count": 3,
+        "matched_product_names": [
+          "NamViet CRM Pro",
+          "NamViet ERP SMB",
+          "NamViet Accounting Simple"
+        ],
+        "is_out_of_scope": false,
+        "missing_fields": []
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.193601",
+      "run_id": "RUN-20261113-084334",
+      "step": "SCORING_AND_PRIORITIZATION",
+      "action": "SCORE_CUSTOMER",
+      "rule_id": "RULE_MULTI_DIMENSIONAL_SCORING",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0010",
+        "company_name": "Công ty Cổ phần Vận tải Biển Miền Trung (CentralShip)",
+        "total_score": 95,
+        "priority": "P1",
+        "breakdown": {
+          "product_fit": 40,
+          "budget_alignment": 30,
+          "authority_and_timeline": 15,
+          "data_completeness": 10
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.194897",
+      "run_id": "RUN-20261113-084334",
+      "step": "SALES_ROUTING",
+      "action": "ASSIGN_SALES_REP",
+      "rule_id": "RULE_ROUTING_INDUSTRY_REGION",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0010",
+        "assigned_rep": "Phạm Thu Dung",
+        "reason": "Khớp ngành phụ trách (Logistics, Vận tải, Kho bãi, Phân phối) và khu vực (Miền Trung). Tải hiện tại: 1/45"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.195969",
+      "run_id": "RUN-20261113-084334",
+      "step": "NEEDS_AND_GAP_ANALYSIS",
+      "action": "ANALYZE_NEEDS",
+      "rule_id": "RULE_PRODUCT_KEYWORD_MATCH",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0011",
+        "matched_count": 2,
+        "matched_product_names": [
+          "NamViet ERP SMB",
+          "NamViet Accounting Simple"
+        ],
+        "is_out_of_scope": false,
+        "missing_fields": []
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.196476",
+      "run_id": "RUN-20261113-084334",
+      "step": "SCORING_AND_PRIORITIZATION",
+      "action": "SCORE_CUSTOMER",
+      "rule_id": "RULE_MULTI_DIMENSIONAL_SCORING",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0011",
+        "company_name": "Công ty TNHH Nhựa & Bao Bì Toàn Thắng",
+        "total_score": 95,
+        "priority": "P1",
+        "breakdown": {
+          "product_fit": 40,
+          "budget_alignment": 30,
+          "authority_and_timeline": 15,
+          "data_completeness": 10
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.196476",
+      "run_id": "RUN-20261113-084334",
+      "step": "SALES_ROUTING",
+      "action": "ASSIGN_SALES_REP",
+      "rule_id": "RULE_ROUTING_INDUSTRY_REGION",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0011",
+        "assigned_rep": "Hoàng Minh Đức",
+        "reason": "Khớp ngành phụ trách (Sản xuất, Xây dựng, Vật liệu xây dựng) và khu vực (Miền Nam). Tải hiện tại: 1/55"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.198267",
+      "run_id": "RUN-20261113-084334",
+      "step": "NEEDS_AND_GAP_ANALYSIS",
+      "action": "ANALYZE_NEEDS",
+      "rule_id": "RULE_PRODUCT_KEYWORD_MATCH",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0012",
+        "matched_count": 1,
+        "matched_product_names": [
+          "NamViet CRM Pro"
+        ],
+        "is_out_of_scope": false,
+        "missing_fields": []
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.199423",
+      "run_id": "RUN-20261113-084334",
+      "step": "SCORING_AND_PRIORITIZATION",
+      "action": "SCORE_CUSTOMER",
+      "rule_id": "RULE_MULTI_DIMENSIONAL_SCORING",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0012",
+        "company_name": "Chuỗi Mỹ Phẩm Organic Sài Gòn",
+        "total_score": 100,
+        "priority": "P1",
+        "breakdown": {
+          "product_fit": 40,
+          "budget_alignment": 30,
+          "authority_and_timeline": 20,
+          "data_completeness": 10
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.200609",
+      "run_id": "RUN-20261113-084334",
+      "step": "SALES_ROUTING",
+      "action": "ASSIGN_SALES_REP",
+      "rule_id": "RULE_ROUTING_INDUSTRY_REGION",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0012",
+        "assigned_rep": "Đỗ Mai Hoa",
+        "reason": "Khớp ngành phụ trách (Bán lẻ, Chuỗi cửa hàng, Mỹ phẩm, Thương mại điện tử) và khu vực (Miền Nam). Tải hiện tại: 1/50"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.201616",
+      "run_id": "RUN-20261113-084334",
+      "step": "NEEDS_AND_GAP_ANALYSIS",
+      "action": "ANALYZE_NEEDS",
+      "rule_id": "RULE_PRODUCT_KEYWORD_MATCH",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0013",
+        "matched_count": 2,
+        "matched_product_names": [
+          "NamViet CRM Pro",
+          "NamViet HRM Cloud"
+        ],
+        "is_out_of_scope": false,
+        "missing_fields": []
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.202613",
+      "run_id": "RUN-20261113-084334",
+      "step": "SCORING_AND_PRIORITIZATION",
+      "action": "SCORE_CUSTOMER",
+      "rule_id": "RULE_MULTI_DIMENSIONAL_SCORING",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0013",
+        "company_name": "Hệ Thống Phòng Khám Nha Khoa Tâm Đức",
+        "total_score": 100,
+        "priority": "P1",
+        "breakdown": {
+          "product_fit": 40,
+          "budget_alignment": 30,
+          "authority_and_timeline": 20,
+          "data_completeness": 10
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.204117",
+      "run_id": "RUN-20261113-084334",
+      "step": "SALES_ROUTING",
+      "action": "ASSIGN_SALES_REP",
+      "rule_id": "RULE_ROUTING_INDUSTRY_REGION",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0013",
+        "assigned_rep": "Vũ Quốc Hùng",
+        "reason": "Khớp ngành phụ trách (Dịch vụ, Giáo dục, Y tế, Công nghệ) và khu vực (Miền Nam). Tải hiện tại: 2/50"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.206170",
+      "run_id": "RUN-20261113-084334",
+      "step": "NEEDS_AND_GAP_ANALYSIS",
+      "action": "ANALYZE_NEEDS",
+      "rule_id": "RULE_PRODUCT_KEYWORD_MATCH",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0014",
+        "matched_count": 1,
+        "matched_product_names": [
+          "NamViet HRM Cloud"
+        ],
+        "is_out_of_scope": false,
+        "missing_fields": []
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.206170",
+      "run_id": "RUN-20261113-084334",
+      "step": "SCORING_AND_PRIORITIZATION",
+      "action": "SCORE_CUSTOMER",
+      "rule_id": "RULE_MULTI_DIMENSIONAL_SCORING",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0014",
+        "company_name": "Chuỗi Trà Sữa Đô Thị (Urban Tea)",
+        "total_score": 90,
+        "priority": "P1",
+        "breakdown": {
+          "product_fit": 40,
+          "budget_alignment": 30,
+          "authority_and_timeline": 10,
+          "data_completeness": 10
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.208067",
+      "run_id": "RUN-20261113-084334",
+      "step": "SALES_ROUTING",
+      "action": "ASSIGN_SALES_REP",
+      "rule_id": "RULE_ROUTING_INDUSTRY_REGION",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0014",
+        "assigned_rep": "Đặng Thùy Linh",
+        "reason": "Khớp ngành phụ trách (F&B, Nông sản, Dịch vụ tổng hợp) và khu vực (Miền Trung). Tải hiện tại: 2/50"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.208067",
+      "run_id": "RUN-20261113-084334",
+      "step": "NEEDS_AND_GAP_ANALYSIS",
+      "action": "ANALYZE_NEEDS",
+      "rule_id": "RULE_PRODUCT_KEYWORD_MATCH",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0015",
+        "matched_count": 2,
+        "matched_product_names": [
+          "NamViet CRM Pro",
+          "NamViet Accounting Simple"
+        ],
+        "is_out_of_scope": false,
+        "missing_fields": []
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.209066",
+      "run_id": "RUN-20261113-084334",
+      "step": "SCORING_AND_PRIORITIZATION",
+      "action": "SCORE_CUSTOMER",
+      "rule_id": "RULE_MULTI_DIMENSIONAL_SCORING",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0015",
+        "company_name": "Hợp tác xã Nông sản Hữu cơ Mộc Châu",
+        "total_score": 90,
+        "priority": "P1",
+        "breakdown": {
+          "product_fit": 40,
+          "budget_alignment": 30,
+          "authority_and_timeline": 10,
+          "data_completeness": 10
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.210148",
+      "run_id": "RUN-20261113-084334",
+      "step": "SALES_ROUTING",
+      "action": "ASSIGN_SALES_REP",
+      "rule_id": "RULE_ROUTING_INDUSTRY_REGION",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0015",
+        "assigned_rep": "Chưa có nhân sự phù hợp",
+        "reason": "Chưa có nhân sự phụ trách phù hợp cho ngành 'Nông nghiệp' tại khu vực 'Sơn La'. Đưa vào danh sách Trưởng phòng quyết định."
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.211419",
+      "run_id": "RUN-20261113-084334",
+      "step": "NEEDS_AND_GAP_ANALYSIS",
+      "action": "ANALYZE_NEEDS",
+      "rule_id": "RULE_PRODUCT_KEYWORD_MATCH",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0016",
+        "matched_count": 1,
+        "matched_product_names": [
+          "NamViet CRM Pro"
+        ],
+        "is_out_of_scope": false,
+        "missing_fields": []
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.211419",
+      "run_id": "RUN-20261113-084334",
+      "step": "SCORING_AND_PRIORITIZATION",
+      "action": "SCORE_CUSTOMER",
+      "rule_id": "RULE_MULTI_DIMENSIONAL_SCORING",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0016",
+        "company_name": "Công ty TNHH Thương mại Minh Khang",
+        "total_score": 75,
+        "priority": "P1",
+        "breakdown": {
+          "product_fit": 40,
+          "budget_alignment": 10,
+          "authority_and_timeline": 15,
+          "data_completeness": 10
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.212629",
+      "run_id": "RUN-20261113-084334",
+      "step": "SALES_ROUTING",
+      "action": "ASSIGN_SALES_REP",
+      "rule_id": "RULE_ROUTING_INDUSTRY_REGION",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0016",
+        "assigned_rep": "Trần Thị Bình",
+        "reason": "Khớp ngành phụ trách (Bán lẻ, Thương mại điện tử, Thời trang) và khu vực (Miền Bắc). Tải hiện tại: 3/50"
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.213626",
+      "run_id": "RUN-20261113-084334",
+      "step": "NEEDS_AND_GAP_ANALYSIS",
+      "action": "ANALYZE_NEEDS",
+      "rule_id": "RULE_PRODUCT_KEYWORD_MATCH",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0017",
+        "matched_count": 0,
+        "matched_product_names": [],
+        "is_out_of_scope": false,
+        "missing_fields": [
+          "Ngân sách dự kiến",
+          "Khu vực / Tỉnh thành",
+          "Lộ trình triển khai dự kiến",
+          "Email liên hệ chính thức"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.214883",
+      "run_id": "RUN-20261113-084334",
+      "step": "SCORING_AND_PRIORITIZATION",
+      "action": "SCORE_CUSTOMER",
+      "rule_id": "RULE_MULTI_DIMENSIONAL_SCORING",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0017",
+        "company_name": "Cửa hàng Phụ tùng Ô tô Hùng Dũng",
+        "total_score": 48,
+        "priority": "P3",
+        "breakdown": {
+          "product_fit": 20,
+          "budget_alignment": 15,
+          "authority_and_timeline": 10,
+          "data_completeness": 3
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.216110",
+      "run_id": "RUN-20261113-084334",
+      "step": "SALES_ROUTING",
+      "action": "ASSIGN_SALES_REP",
+      "rule_id": "RULE_ROUTING_INDUSTRY_REGION",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0017",
+        "assigned_rep": "Chưa có nhân sự phù hợp",
+        "reason": "Chưa có nhân sự phụ trách phù hợp cho ngành 'Bán lẻ' tại khu vực 'Chưa xác định'. Đưa vào danh sách Trưởng phòng quyết định."
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.216110",
+      "run_id": "RUN-20261113-084334",
+      "step": "NEEDS_AND_GAP_ANALYSIS",
+      "action": "ANALYZE_NEEDS",
+      "rule_id": "RULE_PRODUCT_KEYWORD_MATCH",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0018",
+        "matched_count": 2,
+        "matched_product_names": [
+          "NamViet CRM Pro",
+          "NamViet ERP SMB"
+        ],
+        "is_out_of_scope": false,
+        "missing_fields": []
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.217618",
+      "run_id": "RUN-20261113-084334",
+      "step": "SCORING_AND_PRIORITIZATION",
+      "action": "SCORE_CUSTOMER",
+      "rule_id": "RULE_MULTI_DIMENSIONAL_SCORING",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0018",
+        "company_name": "Tập đoàn Minh Anh",
+        "total_score": 100,
+        "priority": "P1",
+        "breakdown": {
+          "product_fit": 40,
+          "budget_alignment": 30,
+          "authority_and_timeline": 20,
+          "data_completeness": 10
+        }
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.218620",
+      "run_id": "RUN-20261113-084334",
+      "step": "HISTORY_CROSS_CHECK",
+      "action": "HISTORY_MATCH_FOUND",
+      "rule_id": "RULE_HISTORY_COMPLAINT_PENDING",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0018",
+        "company_name": "Tập đoàn Minh Anh",
+        "matched_status": "COMPLAINT_PENDING",
+        "notes": "Khách hàng từng khiếu nại báo giá lần trước thiếu minh bạch, cần Trưởng phòng Kinh doanh xem xét trước khi tiếp cận lại."
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.220858",
+      "run_id": "RUN-20261113-084334",
+      "step": "ESCALATION_CHECK",
+      "action": "TRIGGER_MANAGER_ESCALATION",
+      "rule_id": "PREVIOUS_COMPLAINT_HISTORY",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0018",
+        "reasons": [
+          "Khách hàng có lịch sử khiếu nại trước đó: Khách hàng từng khiếu nại báo giá lần trước thiếu minh bạch, cần Trưởng phòng Kinh doanh xem xét trước khi tiếp cận lại."
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.220858",
+      "run_id": "RUN-20261113-084334",
+      "step": "SALES_ROUTING",
+      "action": "ASSIGN_SALES_REP",
+      "rule_id": "RULE_ROUTING_INDUSTRY_REGION",
+      "status": "SUCCESS",
+      "details": {
+        "customer_id": "CUST-NV-0018",
+        "assigned_rep": "Chưa có nhân sự phù hợp",
+        "reason": "Chưa có nhân sự phụ trách phù hợp cho ngành 'Bất động sản' tại khu vực 'Hà Nội'. Đưa vào danh sách Trưởng phòng quyết định."
+      }
+    },
+    {
+      "timestamp": "2026-11-13T08:43:34.244434",
+      "run_id": "RUN-20261113-084334",
+      "step": "PIPELINE_COMPLETION",
+      "action": "GENERATE_FINAL_OUTPUTS",
+      "rule_id": "SYSTEM_DONE",
+      "status": "SUCCESS",
+      "details": {
+        "master_customers_count": 18,
+        "escalated_count": 5,
+        "dnc_count": 1,
+        "active_clients_count": 1
+      }
+    }
+  ]
+}
